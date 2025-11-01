@@ -21,7 +21,7 @@ def decode_hex_xor17_and_normalize(hex_str: str) -> str:
             out.append(plain[i])
         i += 1
 
-    text = out.decode('ascii', errors='ignore')
+    text = out.decode('ascii')
     text = re.sub(r' +', ' ', text).strip()
     return text
 
